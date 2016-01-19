@@ -1,0 +1,20 @@
+// bower:scss
+// endbower
+
+.user-accont-body{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    background: url(../images/loginbg.jpg) 50% 50% / cover no-repeat fixed;
+}
+
+.login-wrap{
+ margin: auto;  
+  position: absolute;  
+  top: 0; left: 0; bottom: 0; right: 0; 
+  width: 380px;
+  height:260px;
+    padding: 50px;
+      border-radius: 10px;
+    background: rgba(255,255,255,.6);
+}
