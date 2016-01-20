@@ -3,5 +3,7 @@
 	phone:'18521351687',
 	nick:'flow',
 	pwd:'flowme',
-	role:'admin'
+	role:'admin',
+	 "success":true,
+    "msg":"登陆成功"
 }

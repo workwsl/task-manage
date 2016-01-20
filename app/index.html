@@ -15,12 +15,10 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body ng-app="myAngularApp" ng-class = "{'user-accont-body':true}">
+  <body ng-app="taskApp" ng-class = "{'user-accont-body':true}">
 
     <!-- Add your site or application content here -->
-    <div class="container">
-     <div ng-view=""></div>
-    </div>
+    <div ui-view></div>
 
     <!-- build:js(app) scripts/vendor.js -->
     <!-- bower:js -->
@@ -35,12 +33,15 @@
     <script src="vendor/angular-route/angular-route.js"></script>
     <script src="vendor/angular-sanitize/angular-sanitize.js"></script>
     <script src="vendor/angular-touch/angular-touch.js"></script>
+    <script src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="vendor/angular-bootstrap/ui-bootstrap-tpls.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/services/loginService.js"></script>
+        <script src="scripts/controllers/loginCtrl.js"></script>
         <!-- endbuild -->
 </body>
 </html>

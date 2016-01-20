@@ -1,11 +1,12 @@
 <div class="login-wrap">
-  <form>
+  <form name="loginForm"  class="login-form" role="form"   ng-submit="submit()">
   <div class="form-group">
-    <input type="tel" class="form-control" id="exampleInputEmail1" placeholder="手机号码">
+    <input type="tel"    ng-model="user.phone" class="form-control" id="exampleInputEmail1"  ng-minlength="11" ng-maxlength="11"  required placeholder="手机号码">
   </div>
   <div class="form-group">
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="密码">
+    <input type="password"  ng-minlength="6" ng-maxlength="20" required  ng-model="user.password" class="form-control" id="exampleInputPassword1" placeholder="密码">
   </div>
-  <button type="button" class="btn btn-primary btn-block">登陆</button>
+  <button type="submit" ng-disabled="loginForm.$invalid" class="btn btn-primary btn-block">登陆</button>
+  <uib-alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)">{{alert.msg}}</uib-alert>
 </form>
 </div>
